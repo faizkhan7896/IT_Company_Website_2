@@ -544,7 +544,7 @@ ul.dropdown-menu li {
     margin-bottom: 10px;
   }
   .dropleft .dropdown-menu,
-.dropright .dropdown-menu {
+  .dropright .dropdown-menu {
     margin-top: -10px;
   }
   .dropdown:hover > .dropdown-menu {
