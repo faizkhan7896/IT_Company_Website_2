@@ -695,8 +695,7 @@ ul.dropdown-menu li {
   border-radius: 2px;
   text-align: center;
   transform: translateY(0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 
