@@ -3,28 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deep Link Redirect</title>
+    <title>Taptack - Influence You Better</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: white;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+      }
+
+      .logo {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #222;
+      }
+
+      p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .download-btn {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: white;
+        background-color: #007aff;
+        transition: background-color 0.3s ease;
+      }
+
+      .download-btn:hover {
+        background-color: #005bb5;
+      }
+
+      .info {
+        font-size: 14px;
+        color: #888;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h2>Redirecting to App...</h2>
+    <div class="container">
+      <img
+        src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/da/78/22/da7822a9-4eca-c52e-7dda-1add0e6c6008/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/460x0w.webp"
+        alt="Taptack Logo"
+        class="logo"
+      />
+      <h1>Welcome to Taptack</h1>
+      <p>Tap into a smarter way of influencing and sharing ideas.</p>
+      <div class="button-group">
+        <a href="taptack://deeplink/232" class="download-btn">Open in App</a>
+        <a
+          href="https://apps.apple.com/us/app/taptack-influence-you-better/id6444877818"
+          class="download-btn"
+          >Download on App Store</a
+        >
+      </div>
+      <div class="info">Redirecting you automatically...</div>
+    </div>
 
     <script>
-      // Create and trigger a hidden anchor tag click
       function openApp() {
-        const a = document.createElement('a');
-        a.href = "taptack://link/232";
-        a.style.display = 'none';
+        const a = document.createElement("a");
+        a.href = "taptack://deeplink/232";
+        a.style.display = "none";
         document.body.appendChild(a);
         a.click();
       }
 
-      // Open app after a small delay (to allow the page to load)
+      // Try opening the app after short delay
       setTimeout(openApp, 1000);
 
-      // Redirect to App Store if app is not opened (after 8 seconds)
+      // Redirect to App Store after 5 seconds
       setTimeout(function () {
-        window.location.href = "https://apps.apple.com/us/app/taptack-influence-you-better/id6444877818";
-      }, 9000);
+        window.location.href =
+          "https://apps.apple.com/us/app/taptack-influence-you-better/id6444877818";
+      }, 5000);
     </script>
   </body>
 </html>
