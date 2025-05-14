@@ -1,191 +1,22 @@
-@@include('header.htm')
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Link Redirect</title>
+  </head>
+  <body>
+    <h2>Redirecting to App...</h2>
 
-@@include('blocks/navigation.htm',{"about":"active", "company":"active"})
+    <script>
+      // Try to open the app using a custom URL scheme
+      window.open("taptack://deeplink/232");
 
-@@include('blocks/page-title.htm', { "page-name": "About Us", "title": "Our Company" })
-
-<!-- Section About Start -->
-<section class="section about-2 position-relative">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="about-item pr-3 mb-5 mb-lg-0">
-					<span class="h6 text-color">What we are</span>
-					<h2 class="mt-3 mb-4 position-relative content-title">We are dynamic team of creative people</h2>
-					<p class="mb-5">We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier.</p>
-
-					<a href="contact.html" class="btn btn-main btn-round-full">Get started</a>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="about-item-img">
-					<img loading="lazy" src="images/about/home-7.jpg" alt="about-image" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Section About End -->
- 
-<section class="about-info section pt-0">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="about-info-item mb-4 mb-lg-0">
-					<h3 class="mb-3"><span class="text-color mr-2 text-md ">01.</span>Our Mission</h3>
-					<p>MindCraft's mission is to deliver innovative mobile & web apps to enhance productivity, improve communication & simplify processes. Our goal is to provide exceptional services to help clients achieve their objectives with the power of technology. We are dedicated to constantly evolving & improving.</p>
-				</div>		
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="about-info-item mb-4 mb-lg-0">
-					<h3 class="mb-3"><span class="text-color mr-2 text-md">02.</span>Vission</h3>
-					<p>MindCraft's vision is to be the leading app development company, recognized for delivering exceptional solutions that transform businesses and improve people's lives. We aim to be a trusted partner for our clients, providing innovative and user-friendly applications that drive success and create value. Our commitment is to constantly innovate and exceed expectations, while fostering a positive and collaborative work environment.</p>
-				</div>		
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="about-info-item mb-4 mb-lg-0">
-					<h3 class="mb-3"><span class="text-color mr-2 text-md">03.</span>Our Approach</h3>
-					<p>MindCraft's approach is to fully understand our clients' needs and goals before delivering customized, high-quality app solutions. We believe in collaboration, open communication, and a human-centered design process. Our team of experts uses the latest technologies to create innovative, user-friendly, and scalable apps that deliver results. Our focus is on ensuring customer satisfaction, meeting project deadlines, and delivering beyond expectations.</p>
-				</div>		
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- section Counter Start -->
-<section class="section counter bg-counter">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="counter-item text-center mb-5 mb-lg-0">
-					<i class="ti-check color-one text-md"></i>
-					<h3 class="mt-2 mb-0 text-white"><span class="counter-stat font-weight-bold">400</span> +</h3>
-					<p class="text-white-50">Project Delivered</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="counter-item text-center mb-5 mb-lg-0">
-					<i class="ti-flag color-one text-md"></i>
-					<h3 class="mt-2 mb-0 text-white"><span class="counter-stat font-weight-bold">10 </span>+ </h3>
-					<p class="text-white-50">Years of Experience</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="counter-item text-center mb-5 mb-lg-0">
-					<i class="ti-layers color-one text-md"></i>
-					<h3 class="mt-2 mb-0 text-white"><span class="counter-stat font-weight-bold">16</span></h3>
-					<p class="text-white-50">Country Served</p>
-				</div>
-			</div>
-		
-		</div>
-	</div>
-</section>
-<!-- section Counter End  -->
-
- <!-- Section Services Start -->
- <section class="section team">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-7 text-center">
-				<div class="section-title">
-					<span class="h6 text-color">Our Team</span>
-					<h2 class="mt-3 content-title">Expert Team member to get best service</h2>
-				</div>
-			</div>
-		</div>
-
-		<div class="row justify-content-center">
-		
-
-	</div>
-</section> 
-<!--  Section Services End -->
-<!-- Section Testimonial Start -->
-<section class="section testimonial bg-gray">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-7 text-center">
-				<div class="section-title">
-					<span class="h6 text-color">Clients testimonial</span>
-					<h2 class="mt-3 content-title">Check what's our clients say about us</h2>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="testimonial-wrap">
-			<div class="testimonial-item position-relative">
-				<i class="ti-quote-left text-color"></i>
-
-				<div class="testimonial-item-content">
-					<p class="testimonial-text"> MindCraft has been instrumental in growing our online business. Their
-            expertise in web development has helped us attract more customers
-            and increase conversions.</p>
-
-					<div class="testimonial-author">
-            <h5 class="mb-0 text-capitalize">Pete Jhon</h5>
-						<!-- <p>Excutive Director,themefisher</p> -->
-					</div>
-				</div>
-			</div>
-		  <div class="testimonial-item position-relative">
-        <i class="ti-quote-left text-color"></i>
-
-        <div class="testimonial-item-content">
-          <p class="testimonial-text">
-            I recently had the pleasure of working with MindCraft on an app
-            development project and I am extremely impressed with their work.
-            MindCraft developers was incredibly professional, delivering
-            high-quality work in a timely manner. The app they developed was
-            exactly what I needed, with a clean and intuitive design that
-            exceeded my expectations.
-          </p>
-
-          <div class="testimonial-author">
-            <h5 class="mb-0 text-capitalize">Amelia k</h5>
-            <!-- <p>Excutive Director,themefisher</p> -->
-          </div>
-        </div>
-      </div>
-			<div class="testimonial-item position-relative">
-        <i class="ti-quote-left text-color"></i>
-        <div class="testimonial-item-content">
-          <p class="testimonial-text">
-            MindCraft has transformed the way our company manages our IT systems.
-            Their website is user-friendly and their team is always available to
-            assist us.
-          </p>
-
-          <div class="testimonial-author">
-            <h5 class="mb-0 text-capitalize">Oran Smith</h5>
-            <!-- <p>Excutive Director,themefisher</p> -->
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-item position-relative">
-        <i class="ti-quote-left text-color"></i>
-
-        <div class="testimonial-item-content">
-          <p class="testimonial-text">
-            MindCraft has exceeded our expectations with their exceptional web
-            development skills and attention to detail. We highly recommend
-            their services to anyone looking to improve their online presence.
-          </p>
-
-          <div class="testimonial-author">
-            <h5 class="mb-0 text-capitalize">Prashant singh</h5>
-            <!-- <p>Excutive Director,themefisher</p> -->
-          </div>
-        </div>
-      </div>
-		</div>
-	</div>
-</section>
-<!-- Section Testimonial End -->
-
-@@include('blocks/footer.htm')
-
-@@include('footer.htm')
+      // Fallback to App Store after 5 seconds
+      setTimeout(function () {
+        window.location.href =
+          "https://apps.apple.com/us/app/taptack-influence-you-better/id6444877818"; // Replace with actual App Store URL
+      }, 5000);
+    </script>
+  </body>
+</html>
