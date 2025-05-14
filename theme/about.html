@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/faizkhan7896/
--->
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,19 +7,23 @@
   </head>
   <body>
     <h2>Redirecting to App...</h2>
-	<a href="taptack://link/232">My App</a>
 
     <script>
-      // Try to open the app using a custom URL scheme
+      // Create and trigger a hidden anchor tag click
+      function openApp() {
+        const a = document.createElement('a');
+        a.href = "taptack://link/232";
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+      }
 
-      // Fallback to App Store after 5 seconds
-      setTimeout(function () {
-		window.open("taptack://link/232");
+      // Open app after a small delay (to allow the page to load)
+      setTimeout(openApp, 1000);
 
-      }, 4000);
+      // Redirect to App Store if app is not opened (after 8 seconds)
       setTimeout(function () {
-        window.location.href =
-          "https://apps.apple.com/us/app/taptack-influence-you-better/id6444877818"; // Replace with actual App Store URL
+        window.location.href = "https://apps.apple.com/us/app/taptack-influence-you-better/id6444877818";
       }, 9000);
     </script>
   </body>
